@@ -1,0 +1,15 @@
+import java.util.*;
+public class Revstring
+{
+	public static void main(String[] args)
+	{
+		String w, rev = " ";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a word:");
+		w = sc.nextLine();
+		int len = w.length();
+		for(int i = len-1; i>=0;i--)
+		rev = rev+w.charAt(i);
+		System.out.println("The reverse of the string is:"+rev);
+	}
+}
